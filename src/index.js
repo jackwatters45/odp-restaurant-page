@@ -1,3 +1,9 @@
-import './style.css';
+import "./style.css";
 
-console.log("Please don't do anything crazy tonight grandpa!")
+function component() {
+  const element = document.createElement("div");
+
+  return element;
+}
+
+document.body.appendChild(component());
