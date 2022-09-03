@@ -1,4 +1,58 @@
-/* USE CSS VARIABLES */
-:root{
-    --sunny-yellow-color: #f7c315;
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+}
+
+:root {
+    --sunny-yellow-color: #fcf712;
+    color: black;
+}
+
+/* General styles */
+button {
+    cursor: pointer;
+}
+
+.shadow {
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, .5);
+}
+
+/* Layout */
+#content {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/* Nav */
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    align-items: center;
+    background-color: var(--sunny-yellow-color);
+    padding: 0px 25px;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.frank-head {
+    width: 75px;
+}
+
+.nav-items {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.nav-items>div {
+    padding: 5px;
 }
