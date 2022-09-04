@@ -4,6 +4,8 @@ deploy this on github pls
 
 <!-- Need to do the ting in the tutorial where it can make multiple pages -->
 
+<!-- eventually add merch page -->
+
 Note: DOM elements should be created using JavaScript but styling can be done in a separate CSS file.
 
 2. Now remove those elements from the HTML (so leave only the <html>, <body>, and <div id="content"> tags) and instead create them by using JavaScript only, e.g. by appending each new element to div#content once the page is first loaded. Since we’re all set up to write our code in multiple files, let’s write this initial page-load function inside of its own module and then import and call it inside of index.js.
