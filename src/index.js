@@ -1,4 +1,6 @@
-import "./style.css";
-import _ from "./pages/home.js";
+import run from "./pages/home.js";
+import _ from './styles/style.css';
+import Bar from './img/paddys-pub.jpeg'
 
-// component();
+let content = run();
+console.log(content)

@@ -2,7 +2,9 @@
 
 deploy this on github pls
 
-split up css pages
+video - html webpack plugin templates - 1:05
+
+
 
 Note: DOM elements should be created using JavaScript but styling can be done in a separate CSS file.
 

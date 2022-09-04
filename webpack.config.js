@@ -7,9 +7,9 @@ module.exports = {
   // devtool: none -> removes the eval business (just lets you read better whats going on behind the scenes)
   entry: {
     index: "./src/index.js",
-    menu: "./src/menu.js",
-    home: "./src/home.js",
-    contact: "./src/contact.js",
+    menu: "./src/pages/menu.js",
+    home: "./src/pages/home.js",
+    about: "./src/pages/about.js",
   },
   devtool: "inline-source-map",
   devServer: {
@@ -17,19 +17,37 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Charlie's Milk Steaks",
+      title: "Paddy's Pub",
     }),
   ],
   output: {
-    filename: "[name].bundle.js",
+    filename: "[name].bundle.[contenthash].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+  },
+  optimization: {
+    moduleIds: 'deterministic',
+    runtimeChunk: 'single',
+    splitChunks: {
+      chunks: 'all',
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },
