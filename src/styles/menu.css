@@ -1,0 +1,16 @@
+.menu-section {
+    max-width: 500px;
+    margin-top: 40px;
+    font-size: 26px;
+}
+
+ul.menu>li {
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.last-section {
+    margin-bottom: 50px;
+}

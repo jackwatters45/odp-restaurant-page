@@ -1,0 +1,39 @@
+
+.contact>div {
+    display: flex;
+}
+
+.main-content-item.contact,
+.main-content-item.team {
+    margin: 1rem;
+    padding: 1rem;
+    min-width: 700px;
+}
+
+.phone>p,
+.address>p {
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.team-item {
+    background-color: rgba(252, 247, 18, 0.3);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 150px 1fr;
+    width: 100%;
+}
+
+.team-item>.name {
+    align-self: flex-end;
+    font-size: 32px;
+}
+
+.team-item>img {
+    grid-row: 1 / -1;
+    height: 150px;
+}
+
+.team>* {
+    margin-bottom: 20px;
+}
