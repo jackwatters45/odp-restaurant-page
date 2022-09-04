@@ -1,4 +1,4 @@
 import "./style.css";
-import { _ } from "./home.js";
+import _ from "./pages/home.js";
 
 // component();

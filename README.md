@@ -2,9 +2,7 @@
 
 deploy this on github pls
 
-<!-- Need to do the ting in the tutorial where it can make multiple pages -->
-
-<!-- eventually add merch page -->
+split up css pages
 
 Note: DOM elements should be created using JavaScript but styling can be done in a separate CSS file.
 
