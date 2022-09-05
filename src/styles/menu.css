@@ -4,7 +4,9 @@
     font-size: 26px;
 }
 
-ul.menu>li {
+/* ul.menu>li {
+ */
+ul>li {
     text-align: center;
     font-weight: 300;
     font-size: 18px;

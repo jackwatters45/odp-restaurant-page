@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url(https://fonts.googleapis.com/css2?family=Nuosu+SIL&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 * {
     margin: 0;
     padding: 0;
@@ -78,7 +77,7 @@ ul.menu {
 
 /* Main Content */
 .main-content-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/paddys-pub.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(ed2b4fdcff334780a1b1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,4 +123,60 @@ ul.menu {
 .github-logo {
     height: 20px;
     margin: auto 0;
+}
+.menu-section {
+    max-width: 500px;
+    margin-top: 40px;
+    font-size: 26px;
+}
+
+/* ul.menu>li {
+ */
+ul>li {
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.last-section {
+    margin-bottom: 50px;
+}
+
+.contact>div {
+    display: flex;
+}
+
+.main-content-item.contact,
+.main-content-item.team {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.phone>p,
+.address>p {
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.team-item {
+    background-color: rgba(252, 247, 18, 0.3);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 150px 1fr;
+    width: 100%;
+}
+
+.team-item>.name {
+    align-self: flex-end;
+    font-size: 32px;
+}
+
+.team-item>img {
+    grid-row: 1 / -1;
+    height: 150px;
+}
+
+.team>* {
+    margin-bottom: 20px;
 }
