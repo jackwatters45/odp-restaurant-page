@@ -1,5 +1,7 @@
 # odp-restaurant-page
 
+Great resource to review Webpack
+
 deploy this on github pls
 
 video - html webpack plugin templates - 1:05

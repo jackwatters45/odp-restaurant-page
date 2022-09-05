@@ -5,6 +5,7 @@ module.exports = {
   // devtool: none -> removes the eval business (just lets you read better whats going on behind the scenes)
   entry: {
     index: "./src/index.js",
+    vendor: "./src/vendor.js",
     menu: "./src/pages/menu.js",
     home: "./src/pages/home.js",
     about: "./src/pages/about.js",
