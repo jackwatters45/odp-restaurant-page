@@ -5,12 +5,24 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = merge(common, {
   mode: "production",
+  devtool: "source-map",
   output: {
     filename: "[name].[contenthash].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
-  plugins: [new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" })],
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        styles: {
+          name: "styles",
+          type: "css/mini-extract",
+          chunks: "all",
+          enforce: true,
+        },
+      },
+    },
+  },
   module: {
     rules: [
       {
@@ -19,4 +31,5 @@ module.exports = merge(common, {
       },
     ],
   },
+  plugins: [new MiniCssExtractPlugin({ filename: "[name].[contenthash].css" })],
 });

@@ -1,6 +1,8 @@
 # odp-restaurant-page
 deploy this on github pls
 
+look into lazy loading
+
 Great resource to review Webpack
 
 video - html webpack plugin templates - 1:05
