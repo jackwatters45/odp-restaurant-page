@@ -1,12 +1,11 @@
 # odp-restaurant-page
+deploy this on github pls
 
 Great resource to review Webpack
 
-deploy this on github pls
-
 video - html webpack plugin templates - 1:05
-
 SplitChunksPlugin - worth looking into at a later point
+for future projects extract css
 
 Note: DOM elements should be created using JavaScript but styling can be done in a separate CSS file.
 
