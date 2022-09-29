@@ -1,11 +1,11 @@
 export default function menu() {
-  const menu = document.createElement("div");
-  menu.classList.add("main-content");
+  const menu = document.createElement('div');
+  menu.classList.add('main-content');
 
-  const platters = document.createElement("div");
-  platters.classList.add("menu-section");
-  platters.innerHTML = "Platters";
-  const plattersList = document.createElement("ul");
+  const platters = document.createElement('div');
+  platters.classList.add('menu-section');
+  platters.innerHTML = 'Platters';
+  const plattersList = document.createElement('ul');
   plattersList.innerHTML = `<li><strong>Cheese is a funny thing</strong> block of cheese, old cheese, cottage cheese, crow
       egg, quail egg</li>
   <li><strong>Dee's a Giant Bird</strong> crow, dragon, human meat (racoon), barnacles, deleware
@@ -15,10 +15,10 @@ export default function menu() {
   platters.appendChild(plattersList);
   menu.appendChild(platters);
 
-  const entres = document.createElement("div");
-  entres.classList.add("menu-section");
-  entres.innerHTML = "Entres";
-  const entresList = document.createElement("ul");
+  const entres = document.createElement('div');
+  entres.classList.add('menu-section');
+  entres.innerHTML = 'Entres';
+  const entresList = document.createElement('ul');
   entresList.innerHTML = `<li><strong>Milk Steak</strong> boiled in milk over hard w/ a side of jelly beans</li>
   <li><strong>Denim Chicken</strong> fried and served in jeans</li>
   <li><strong>Mac's Famous Mac and Cheese</strong> made with the love of a happy suburban household</li>
@@ -28,10 +28,10 @@ export default function menu() {
   entres.appendChild(entresList);
   menu.appendChild(entres);
 
-  const sandwiches = document.createElement("div");
-  sandwiches.classList.add("menu-section");
-  sandwiches.innerHTML = "Sandwiches";
-  const sandwichesList = document.createElement("ul");
+  const sandwiches = document.createElement('div');
+  sandwiches.classList.add('menu-section');
+  sandwiches.innerHTML = 'Sandwiches';
+  const sandwichesList = document.createElement('ul');
   sandwichesList.innerHTML = `<li><strong>Grilled Charlie</strong> two slices of bread, cheese and peanut butter on the outside
   and chocolate syrup and butter on the inside</li>
   <li><strong>Grilled Frank</strong> pancake with jelly with a whole stick of butter with bacon,
@@ -41,18 +41,18 @@ export default function menu() {
   sandwiches.appendChild(sandwichesList);
   menu.appendChild(sandwiches);
 
-  const drinks = document.createElement("div");
-  drinks.classList.add("menu-section");
-  drinks.innerHTML = "Entres";
-  const drinksList = document.createElement("ul");
+  const drinks = document.createElement('div');
+  drinks.classList.add('menu-section');
+  drinks.innerHTML = 'Entres';
+  const drinksList = document.createElement('ul');
   drinksList.innerHTML = `<li><strong>Fight Milk</strong> a mixture of crow egg, milk, and vodka</li>
   <li><strong>Riot Punch</strong> grain alcohol and punch</li>
   <li><strong>Monkey Beer</strong> beer, whiskey, and human milk</li>
   <li><strong>Wine in coke can</strong> frank's incredibly inconspicuous concoction</li>
   <li><strong>Basement Juice</strong> green paint</li>`;
   drinks.appendChild(drinksList);
-  menu.appendChild(drinks)
+  menu.appendChild(drinks);
 
-  const content = document.querySelector('#content')
-  content.appendChild(menu)
-  ;}
+  const content = document.querySelector('#content');
+  content.appendChild(menu);
+}
