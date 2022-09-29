@@ -1,12 +1,12 @@
 import githubLogo from '../img/github-logo.png';
 
 export default function footer() {
-  const footer = document.createElement('div');
-  footer.classList.add('footer');
+  const footerDiv = document.createElement('div');
+  footerDiv.classList.add('footer');
 
   const text = document.createElement('p');
   text.innerHTML = 'Copyright © 2022 jackwatters45';
-  footer.appendChild(text);
+  footerDiv.appendChild(text);
 
   const a = document.createElement('a');
   a.target = '_blank';
@@ -18,8 +18,8 @@ export default function footer() {
   githubImage.alt = 'Github Logo';
 
   a.appendChild(githubImage);
-  footer.appendChild(a);
+  footerDiv.appendChild(a);
 
   const content = document.querySelector('#content');
-  content.appendChild(footer);
+  content.appendChild(footerDiv);
 }

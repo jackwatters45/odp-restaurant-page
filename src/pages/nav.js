@@ -1,20 +1,20 @@
 import frankHeadImg from '../img/frank.png';
 
 export default function nav() {
-  const nav = document.createElement('div');
-  nav.classList.add('nav');
+  const navDiv = document.createElement('div');
+  navDiv.classList.add('nav');
 
   const home = document.createElement('a');
   home.classList.add('title');
   home.innerHTML = "Paddy's Pub";
-  nav.appendChild(home);
+  navDiv.appendChild(home);
 
   const frankHead = document.createElement('img');
   frankHead.classList.add('frank-head');
   frankHead.src = frankHeadImg;
   frankHead.alt = 'Restaurant Logo';
 
-  nav.appendChild(frankHead);
+  navDiv.appendChild(frankHead);
 
   const navItems = document.createElement('div');
   navItems.classList.add('nav-items');
@@ -32,8 +32,8 @@ export default function nav() {
   aboutButton.classList.add('aboutButton');
   navItems.appendChild(aboutButton);
 
-  nav.appendChild(navItems);
+  navDiv.appendChild(navItems);
 
   const content = document.querySelector('#content');
-  content.appendChild(nav);
+  content.appendChild(navDiv);
 }
