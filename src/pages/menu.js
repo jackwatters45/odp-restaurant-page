@@ -42,7 +42,7 @@ export default function menu() {
   menuDiv.appendChild(sandwiches);
 
   const drinks = document.createElement('div');
-  drinks.classList.add('menu-section');
+  drinks.classList.add('menu-section', 'last-section');
   drinks.innerHTML = 'Entres';
   const drinksList = document.createElement('ul');
   drinksList.innerHTML = `<li><strong>Fight Milk</strong> a mixture of crow egg, milk, and vodka</li>

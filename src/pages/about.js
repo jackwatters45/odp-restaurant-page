@@ -6,15 +6,7 @@ import dennisImage from '../img/dennis.jpeg';
 import macImage from '../img/mac.jpeg';
 import deeImage from '../img/dee.jpeg';
 
-export default function about() {
-  const mainContent = document.createElement('div');
-  mainContent.classList.add(
-    'main-content',
-    'main-content-image',
-    'about-content',
-  );
-
-  // Contact
+const addContactSection = () => {
   const contact = document.createElement('div');
   contact.classList.add('main-content-item', 'contact');
 
@@ -44,9 +36,10 @@ export default function about() {
   phone.appendChild(phoneText);
   contact.appendChild(phone);
 
-  mainContent.appendChild(contact);
+  return contact;
+};
 
-  // Team - would be smart to make an add team member function
+const addTeamSectiom = () => {
   const team = document.createElement('div');
   team.classList.add('main-content-item', 'team');
 
@@ -78,8 +71,20 @@ export default function about() {
   addTeamMember(macImage, 'Ronald "Mac" Mcdonald', 'Bouncer / Bodyguard');
   addTeamMember(deeImage, 'Dee Reynolds', 'Bartender / Bird');
 
-  mainContent.appendChild(team);
+  return team;
+};
 
+export default () => {
   const content = document.querySelector('#content');
+  const mainContent = document.createElement('div');
+  mainContent.classList.add(
+    'main-content',
+    'main-content-image',
+    'about-content',
+  );
+
+  mainContent.appendChild(addContactSection());
+  mainContent.appendChild(addTeamSectiom());
+
   content.appendChild(mainContent);
-}
+};

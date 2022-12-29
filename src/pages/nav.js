@@ -1,6 +1,6 @@
 import frankHeadImg from '../img/frank.png';
 
-export default function nav() {
+export default () => {
   const navDiv = document.createElement('div');
   navDiv.classList.add('nav');
 
@@ -36,4 +36,4 @@ export default function nav() {
 
   const content = document.querySelector('#content');
   content.appendChild(navDiv);
-}
+};

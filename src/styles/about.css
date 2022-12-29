@@ -13,6 +13,7 @@
 .address>p {
     font-weight: 300;
     margin-left: 10px;
+    white-space: nowrap ;
 }
 
 .team-item {
@@ -25,7 +26,9 @@
 
 .team-item>.name {
     align-self: flex-end;
-    font-size: 32px;
+    font-size: 30px;
+    white-space: nowrap;
+    padding: 1rem;;
 }
 
 .team-item>img {
