@@ -4,9 +4,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-
-    /* font-family: roboto, "Clear Sans", "Helvetica Neue", Arial, sans-serif; */
     font-weight: 500;
+    user-select: none;
+
 }
 
 :root {
